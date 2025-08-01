@@ -1,5 +1,13 @@
 main:
-  - title: "Posts"
-    url: /posts/
   - title: "About"
     url: /about/
+  - title: "Posts"
+    url: /posts/
+  - title: "Books"
+    url: /books/
+  - title: "Projects"
+    url: /projects/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "Publications"
+    url: /publications/
