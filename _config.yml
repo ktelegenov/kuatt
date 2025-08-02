@@ -44,12 +44,11 @@ social:
 analytics:
   provider: "google-gtag"
   google:
-    tracking_id: "G-XXXXXXXXXX" # Replace with your Google Analytics 4 tracking ID
+    tracking_id: "G-PY4SK7EYWG"
     anonymize_ip: false
 
 # Search Engine Verification
-google_site_verification: "YOUR_VERIFICATION_CODE" # Replace with your verification code
-bing_site_verification: "YOUR_BING_VERIFICATION"   # Replace with your Bing verification code
+google_site_verification: "bO4xJWsF6dDW575FttkC9nvcoH_u_6rTfXYU-GUaWAI"
 
 # Social sharing
 twitter:
@@ -94,8 +93,7 @@ plugins:
 
 # SEO Tag settings
 webmaster_verifications:
-  google: "YOUR_VERIFICATION_CODE"
-  bing: "YOUR_BING_VERIFICATION"
+  google: "bO4xJWsF6dDW575FttkC9nvcoH_u_6rTfXYU-GUaWAI"
 
 # Feed settings
 atom_feed:
