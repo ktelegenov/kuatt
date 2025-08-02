@@ -14,16 +14,49 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Kuat Telegenov
-email:
+email: ktelegenov@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Systems Development Engineer at Amazon specializing in robotics, autonomous systems, 
+  control theory, and drone technology. Research experience in underwater robotics, 
+  3D printing, and mechatronics at KAUST and Nazarbayev University.
 url: "https://kuatt.com" # the base hostname & protocol for your site
-twitter_username: username
-github_username: username
+baseurl: "" # the subpath of your site, e.g. /blog
+repository: "ktelegenov/kuatt"
+twitter_username: ktelegenov
+github_username: ktelegenov
 minimal_mistakes_skin: default
 search: true
+locale: "en-US"
+title_separator: "-"
+
+# SEO Settings
+og_image: /assets/images/bio-photo.jpg
+social:
+  type: Person
+  name: Kuat Telegenov
+  links:
+    - "https://twitter.com/ktelegenov"
+    - "https://linkedin.com/in/ktelegenov"
+    - "https://github.com/ktelegenov"
+    - "https://instagram.com/kuat.telegenov"
+
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-XXXXXXXXXX" # Replace with your Google Analytics 4 tracking ID
+    anonymize_ip: false
+
+# Search Engine Verification
+google_site_verification: "YOUR_VERIFICATION_CODE" # Replace with your verification code
+bing_site_verification: "YOUR_BING_VERIFICATION"   # Replace with your Bing verification code
+
+# Social sharing
+twitter:
+  username: "ktelegenov"
+
+facebook:
+  username: "ktelegenov"
 
 # Build settings
 markdown: kramdown
@@ -57,18 +90,50 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-seo-tag
+
+# SEO Tag settings
+webmaster_verifications:
+  google: "YOUR_VERIFICATION_CODE"
+  bing: "YOUR_BING_VERIFICATION"
+
+# Feed settings
+atom_feed:
+  path: # blank (default) uses feed.xml
+  hide: false
+
+# HTML Compression for better performance
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# Reading time and meta
+show_date: true
+read_time: true
+words_per_minute: 200
+
+# Enable copy code button
+enable_copy_code_button: true
 
 author:
   name   : "Kuat Telegenov"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Systems Development Engineer at Amazon with expertise in robotics and autonomous systems development."
+  bio    : "Systems Development Engineer at Amazon | Robotics & AI"
+  location: "Boston, MA"
   links:
     - label: "Boston, MA"
       icon: "fas fa-fw fa-map-marker-alt"
       url: ""
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:ktelegenov@gmail.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/ktelegenov"
+    - label: "Google Scholar"
+      icon: "fab fa-fw fa-google"
+      url: "https://scholar.google.com/citations?user=fRByoW0AAAAJ"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/ktelegenov"
@@ -103,7 +168,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
       share: true
       related: true
   # _pages
