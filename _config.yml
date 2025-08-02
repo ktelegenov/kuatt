@@ -16,8 +16,8 @@
 title: Kuat Telegenov
 email: ktelegenov@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Systems Development Engineer at Amazon specializing in robotics, autonomous systems, 
-  control theory, and drone technology. Research experience in underwater robotics, 
+  Systems Development Engineer at Amazon specializing in robotics, autonomous systems,
+  and drone technology. Research and engineering experience in underwater robotics, 
   3D printing, and mechatronics at KAUST and Nazarbayev University.
 url: "https://kuatt.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
