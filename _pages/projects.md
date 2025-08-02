@@ -3,36 +3,35 @@ title: "Projects"
 permalink: /projects/
 layout: single
 author_profile: true
+classes: wide
 ---
 
-## Current Projects
+## Underwater Towing System
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+I led the development of an underwater towing system for large area coral reef monitoring purposes. The system, which consists of a towed underwater vehicle (TUV) and a surface vessel, enables the collection of high-resolution data from the water column and seafloor. I designed the TUV to be modular and adaptable, allowing for easy integration of various sensors and payloads. The system was successfully tested in a series of field trials, demonstrating its effectiveness in collecting data in challenging marine environments. This project showcases my expertise in marine robotics and my commitment to advancing ocean exploration and research.
 
-### Featured Work
+![Underwater Towing System](/assets/images/underwater_towing_system.jpg)
 
-#### Project Alpha
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+---
 
-**Technologies:** Lorem, Ipsum, Dolor
-**Status:** In Progress
+## Autonomous Drones
 
-#### Project Beta
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+### European Robotics League Competition
 
-**Technologies:** Consectetur, Adipiscing, Elit
-**Status:** Completed
+As the team leader in the European Robotics League (ERL) 2019, I led a multidisciplinary team of engineers to develop an autonomous drone solution tailored for emergency response scenarios. Our project focused on achieving seamless outdoor and indoor autonomous navigation, integrating advanced obstacle detection and avoidance systems, optimizing speed for rapid response, and implementing sophisticated object recognition algorithms. Additionally, we engineered the drone for precise item delivery, ensuring accuracy under challenging conditions. Our efforts were recognized with the Best Air Team award, highlighting our success in the competition.
 
-#### Project Gamma
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+![European Robotics League Drone](/assets/images/drone_m100.jpg)
 
-**Technologies:** Tempor, Incididunt, Labore
-**Status:** Planning
+### Drone Control in a Moving Elevator
 
-### Open Source Contributions
+I designed and conducted an experiment inside a moving elevator to validate a novel control strategy for drone reference tracking in GPS-denied environments. The experiment utilized a custom setup with advanced sensors and algorithms, including an Extended Kalman Filter with Unknown Inputs (EKF-UI) and a Sliding Mode Controller, to ensure precise trajectory tracking. This work demonstrated the drone's ability to maintain stability and track references within a dynamic, non-inertial frame, offering practical insights for UAV navigation in constrained and moving environments.
 
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+![Drone Control in Moving Elevator](/assets/images/drone_in_elevator.png)
 
-- **Repository One** - Contribution to open source project with lorem ipsum features
-- **Repository Two** - Bug fixes and documentation improvements
-- **Repository Three** - New feature implementation and testing
+---
+
+## Underactuated Gripper
+
+I led the development of a low-cost, open-source 3D-printed robotic gripper platform designed for research and educational applications. As the project leader, I oversaw the entire process, from conceptualization to implementation, ensuring the gripper met the goals of affordability, simplicity, and adaptability. I designed the three-finger underactuated mechanism and optimized it for 3D printing, utilizing off-the-shelf components to make it accessible to institutions with limited resources. This platform, which supports advanced modifications for adaptive grasping and sensor integration, reflects my commitment to democratizing robotics innovation and enabling hands-on learning for students and researchers worldwide.
+
+![Underactuated Gripper](/assets/images/Gripper.JPG)
