@@ -1,6 +1,10 @@
 <!-- Favicon -->
 <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
 <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ '/assets/images/favicon-96x96.png' | relative_url }}">
+<link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon.svg' | relative_url }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
+<link rel="manifest" href="{{ '/assets/images/manifest.json' | relative_url }}">
 
 <!-- Structured Data for SEO -->
 <script type="application/ld+json">
@@ -46,6 +50,20 @@
 <meta name="author" content="Kuat Telegenov">
 <meta name="robots" content="index, follow">
 <meta name="googlebot" content="index, follow">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{{ site.description }}">
+<meta property="og:image" content="{{ site.url }}/assets/images/bio-photo.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+<meta property="twitter:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="twitter:description" content="{{ site.description }}">
+<meta property="twitter:image" content="{{ site.url }}/assets/images/bio-photo.jpg">
 
 <!-- Preconnect to external domains for better performance -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
