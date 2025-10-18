@@ -16,13 +16,21 @@ header:
 excerpt: "My experience with the University of Illinois iMBA program - from application to coursework, and what I've learned along the way."
 ---
 
+<<<<<<< Updated upstream
 When I decided to pursue an MBA while working full-time as a Systems Development Engineer at Amazon, I knew I needed a program that could accommodate my demanding schedule without compromising on quality. That's how I discovered the University of Illinois at Urbana-Champaign's iMBA program, and honestly, it's been one of the best decisions I've made for my career development.
+=======
+When I decided to pursue an MBA while working full-time, I knew I needed a program that could accommodate my demanding schedule without compromising on quality. That's how I discovered the University of Illinois at Urbana-Champaign's iMBA program, and honestly, it's been one of the best decisions I've made for my career development.
+>>>>>>> Stashed changes
 
 ## Why I Chose the UIUC iMBA Program
 
 Coming from a technical background in robotics and autonomous systems, I was looking for a program that would complement my engineering expertise with business acumen. The UIUC iMBA stood out for several compelling reasons:
 
+<<<<<<< Updated upstream
 **Affordability**: At just over $26,000 total tuition, it's incredibly affordable compared to traditional MBA programs that can cost upwards of $200,000.
+=======
+**Affordability**: At just over 20K total tuition, it's incredibly affordable compared to traditional MBA programs that can cost upwards of 200K.
+>>>>>>> Stashed changes
 
 **Flexibility**: The program allows you to complete your degree in 24-60 months at your own pace. You can start in January, March, August, or October, and there are no GMAT/GRE requirements for admission.
 
@@ -44,7 +52,11 @@ One of the pleasant surprises has been the high quality of the Coursera-based co
 
 ### Live Sessions: Engaging but Sometimes Awkward
 
+<<<<<<< Updated upstream
 The live sessions are where the program really shines in terms of engagement. Faculty members lead dynamic discussions, and you get to interact with classmates from around the world. However, I'll be honest - it can sometimes be awkward when you're placed in breakout rooms and people just... stay silent. It's the virtual equivalent of an uncomfortable elevator ride! But when the discussions do flow, they're incredibly valuable and bring diverse perspectives from different industries and cultures.
+=======
+The live sessions are where the program really shines in terms of engagement. Faculty members lead dynamic discussions, and you get to interact with classmates from around the world. We even got to sing songs during live sessions to get extra credit 😊. However, I'll be honest - it can sometimes be awkward when you're placed in breakout rooms and people just... stay silent. It's the virtual equivalent of an uncomfortable elevator ride! But when the discussions do flow, they're incredibly valuable and bring diverse perspectives from different industries and cultures.
+>>>>>>> Stashed changes
 
 ### Group Work and Networking
 
@@ -69,7 +81,10 @@ The breadth of knowledge I've gained has been impressive:
 
 **Finance and Economics**: Understanding money and banking, Federal Reserve operations, and how monetary policy affects business decisions has given me a much better grasp of the economic environment my company operates in.
 
+<<<<<<< Updated upstream
 **Accounting**: Learning to read and interpret financial statements has made me more strategic in thinking about project costs and ROI at Amazon.
+=======
+>>>>>>> Stashed changes
 
 **Marketing**: Understanding customer segmentation, positioning, and digital marketing has been directly applicable to how we think about our robotics products and their market fit.
 
@@ -79,7 +94,11 @@ The breadth of knowledge I've gained has been impressive:
 
 ## Balancing Work and Studies
 
+<<<<<<< Updated upstream
 Managing the program while working full-time at Amazon requires discipline but is definitely doable. I typically spend 8-12 hours per week on coursework, with some weeks being heavier during exam periods or major project deadlines. The flexibility to learn at my own pace has been crucial - when we have major product launches at work, I can scale back my course load, and when things are quieter, I can accelerate.
+=======
+Managing the program while working full-time requires discipline but is definitely doable. I typically spend 8-12 hours per week on coursework, with some weeks being heavier during exam periods or major project deadlines. The flexibility to learn at my own pace has been crucial - when we have major product launches at work, I can scale back my course load, and when things are quieter, I can accelerate.
+>>>>>>> Stashed changes
 
 ## What I Wish I Had Known
 
@@ -89,7 +108,11 @@ Managing the program while working full-time at Amazon requires discipline but i
 
 3. **Use the networking opportunities**: The program attracts high-quality professionals. Take advantage of study groups and virtual networking events.
 
+<<<<<<< Updated upstream
 4. **Apply concepts immediately**: The real value comes from applying what you learn to your current role. I regularly share insights from my coursework with my team at Amazon.
+=======
+4. **Apply concepts immediately**: The real value comes from applying what you learn to your current role. I regularly share insights from my coursework with my colleagues during informal chats. Even more valuable is applying the knowledge to case studies and real-world scenarios, which helps solidify the concepts and makes them more practical.
+>>>>>>> Stashed changes
 
 ## The ESL Experience
 
@@ -97,6 +120,7 @@ For anyone concerned about being a non-native English speaker in the program: do
 
 ## Looking Forward
 
+<<<<<<< Updated upstream
 I'm about halfway through the program now, and I can already see the impact on my career thinking. I'm not just building better robots anymore - I'm thinking about market needs, cost structures, competitive advantages, and how to position our products strategically. The program has given me the business vocabulary and framework to communicate more effectively with non-technical stakeholders and to think more holistically about engineering problems.
 
 The UIUC iMBA has exceeded my expectations in terms of quality, flexibility, and practical applicability. For any working professional, especially those in technical fields looking to broaden their business acumen, I'd highly recommend considering this program.
@@ -116,3 +140,8 @@ The UIUC iMBA has exceeded my expectations in terms of quality, flexibility, and
 ---
 
 *Are you considering an online MBA program? I'd love to hear about your experience or answer any questions about the UIUC iMBA program. Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/ktelegenov) or [email](mailto:ktelegenov@gmail.com).*
+=======
+I'm about halfway through the program now, and I can already see the impact on my career thinking. I'm not just an engineer anymore - I'm thinking about market needs, cost structures, competitive advantages, and how to position anything strategically. The program has given me the business vocabulary and framework to communicate more effectively with non-technical stakeholders and to think more holistically about engineering problems.
+
+The UIUC iMBA has exceeded my expectations in terms of quality, flexibility, and practical applicability. For any working professional, especially those in technical fields looking to broaden their business acumen, I'd highly recommend considering this program.
+>>>>>>> Stashed changes
