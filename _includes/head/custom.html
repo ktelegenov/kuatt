@@ -13,12 +13,19 @@
   "@type": "Person",
   "name": "Kuat Telegenov",
   "url": "{{ site.url }}",
-  "image": "{{ site.url }}/assets/images/bio-photo.jpg",
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ site.url }}/assets/images/bio-photo.jpg",
+    "width": 400,
+    "height": 400
+  },
+  "description": "Systems Development Engineer at Amazon specializing in robotics, autonomous systems, and drone technology. Research and engineering experience in underwater robotics, 3D printing, and mechatronics.",
   "sameAs": [
-    "https://linkedin.com/in/ktelegenov",
-    "https://twitter.com/ktelegenov",
+    "https://www.linkedin.com/in/ktelegenov",
+    "https://x.com/ktelegenov",
     "https://github.com/ktelegenov",
-    "https://scholar.google.com/citations?user=fRByoW0AAAAJ"
+    "https://scholar.google.com/citations?user=fRByoW0AAAAJ",
+    "https://www.instagram.com/kuat.telegenov"
   ],
   "jobTitle": "Systems Development Engineer",
   "worksFor": {
@@ -28,11 +35,15 @@
   "alumniOf": [
     {
       "@type": "Organization",
+      "name": "King Abdullah University of Science and Technology"
+    },
+    {
+      "@type": "Organization",
       "name": "University of Technology Malaysia"
     },
     {
       "@type": "Organization", 
-      "name": "Eurasian National University"
+      "name": "Nazarbayev University"
     }
   ],
   "knowsAbout": [
@@ -41,7 +52,8 @@
     "Drone Technology",
     "Underwater Robotics",
     "3D Printing",
-    "Mechatronics"
+    "Mechatronics",
+    "Control Systems"
   ]
 }
 </script>
@@ -54,17 +66,33 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-<meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-<meta property="og:description" content="{{ site.description }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }} - Systems Development Engineer{% endif %}">
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:image" content="{{ site.url }}/assets/images/bio-photo.jpg">
+<meta property="og:image:secure_url" content="{{ site.url }}/assets/images/bio-photo.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="400">
+<meta property="og:image:height" content="400">
+<meta property="og:image:alt" content="Kuat Telegenov - Systems Development Engineer">
 
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
-<meta property="twitter:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-<meta property="twitter:description" content="{{ site.description }}">
-<meta property="twitter:image" content="{{ site.url }}/assets/images/bio-photo.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@ktelegenov">
+<meta name="twitter:creator" content="@ktelegenov">
+<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }} - Systems Development Engineer{% endif %}">
+<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:image" content="{{ site.url }}/assets/images/bio-photo.jpg">
+<meta name="twitter:image:alt" content="Kuat Telegenov">
+
+<!-- Additional SEO meta tags -->
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
 <!-- Preconnect to external domains for better performance -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://www.google-analytics.com">
+
+<!-- Custom CSS for SEO improvements -->
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
