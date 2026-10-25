@@ -3,25 +3,456 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kuat Telegenov</title>
+  <title>Kuat Telegenov · Robotics Engineer</title>
+  <meta name="description" content="Kuat Telegenov is a robotics engineer at Amazon in Boston, with 13 years of experience across Amazon, KAUST and Nazarbayev University, currently completing an MBA at the University of Illinois.">
+  <meta name="author" content="Kuat Telegenov">
+  <meta name="google-site-verification" content="bO4xJWsF6dDW575FttkC9nvcoH_u_6rTfXYU-GUaWAI">
+  <link rel="canonical" href="https://kuatt.com/">
+  <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d0f12" media="(prefers-color-scheme: dark)">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://kuatt.com/">
+  <meta property="og:site_name" content="Kuat Telegenov">
+  <meta property="og:title" content="Kuat Telegenov · Robotics Engineer">
+  <meta property="og:description" content="Robotics engineer at Amazon. 13 years turning robotics into real-world results.">
+  <meta property="og:image" content="https://kuatt.com/assets/img/og.jpg">
+  <meta property="og:image:alt" content="Portrait of Kuat Telegenov">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@ktelegenov">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kuat Telegenov",
+    "url": "https://kuatt.com/",
+    "image": "https://kuatt.com/assets/img/kuat.jpg",
+    "jobTitle": "Systems Development Engineer II",
+    "worksFor": { "@type": "Organization", "name": "Amazon" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Boston", "addressRegion": "MA", "addressCountry": "US" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Illinois Urbana-Champaign" },
+      { "@type": "CollegeOrUniversity", "name": "L.N. Gumilyov Eurasian National University" },
+      { "@type": "CollegeOrUniversity", "name": "Universiti Teknologi Malaysia" }
+    ],
+    "knowsAbout": ["Robotics", "Autonomous systems", "Automation"],
+    "knowsLanguage": ["English", "Russian", "Kazakh", "Turkish"],
+    "sameAs": [
+      "https://www.linkedin.com/in/ktelegenov",
+      "https://scholar.google.com/citations?user=fRByoW0AAAAJ",
+      "https://github.com/ktelegenov",
+      "https://x.com/ktelegenov",
+      "https://www.instagram.com/kuat.telegenov"
+    ]
+  }
+  </script>
+
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      background: #fafafa;
-      color: #333;
+    :root {
+      --bg: #f6f5f1;
+      --surface: #ffffff;
+      --ink: #121418;
+      --muted: #5b616b;
+      --line: #e2e0d9;
+      --accent: #d9481a;
+      --accent-ink: #ffffff;
+      --accent-soft: #fbe4d9;
+      --shadow: 0 1px 2px rgba(18, 20, 24, .04), 0 12px 32px -12px rgba(18, 20, 24, .14);
+      --radius: 18px;
+      --wrap: 1040px;
+      --display: "Space Grotesk", system-ui, sans-serif;
+      --body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     }
-    h1 {
-      font-size: 2rem;
-      font-weight: 400;
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d0f12;
+        --surface: #16191e;
+        --ink: #eeece6;
+        --muted: #9aa0aa;
+        --line: #262a31;
+        --accent: #ff6a33;
+        --accent-ink: #0d0f12;
+        --accent-soft: #2a1a12;
+        --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 12px 32px -12px rgba(0, 0, 0, .6);
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 400 17px/1.6 var(--body);
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; }
+    h1, h2, h3 { font-family: var(--display); line-height: 1.1; margin: 0; letter-spacing: -.02em; }
+    p { margin: 0; }
+    .wrap { width: min(var(--wrap), 100% - 40px); margin-inline: auto; }
+    .skip { position: absolute; left: -999px; }
+    .skip:focus { left: 16px; top: 16px; background: var(--ink); color: var(--bg); padding: 8px 12px; border-radius: 8px; z-index: 10; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+
+    /* Nav */
+    .nav {
+      position: sticky; top: 0; z-index: 5;
+      background: color-mix(in srgb, var(--bg) 82%, transparent);
+      backdrop-filter: saturate(160%) blur(12px);
+      -webkit-backdrop-filter: saturate(160%) blur(12px);
+      border-bottom: 1px solid transparent;
+      transition: border-color .2s;
+    }
+    .nav.scrolled { border-bottom-color: var(--line); }
+    .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .logo { font: 700 18px var(--display); text-decoration: none; letter-spacing: -.01em; }
+    .logo span { color: var(--accent); }
+    .nav ul { display: flex; gap: 28px; list-style: none; margin: 0; padding: 0; align-items: center; }
+    .nav ul a { text-decoration: none; color: var(--muted); font-size: 15px; font-weight: 500; transition: color .15s; }
+    .nav ul a:hover { color: var(--ink); }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 20px; border-radius: 999px;
+      font: 600 15px var(--body); text-decoration: none;
+      border: 1px solid var(--line); background: var(--surface);
+      transition: transform .15s, box-shadow .15s;
+    }
+    .btn:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
+    .btn-primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+    .nav .btn { padding: 8px 16px; font-size: 14px; }
+    .nav ul .btn, .nav ul .btn:hover { color: var(--accent-ink); }
+
+    /* Hero */
+    .hero { padding: 80px 0 56px; }
+    .hero .wrap { display: grid; grid-template-columns: 1.3fr .7fr; gap: 64px; align-items: center; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-size: 14px; font-weight: 500; color: var(--muted);
+      margin-bottom: 22px;
+    }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 4px color-mix(in srgb, #22c55e 22%, transparent); }
+    .hero h1 { font-size: clamp(42px, 6.6vw, 76px); font-weight: 700; }
+    .hero h1 em { font-style: normal; color: var(--accent); }
+    .lede { margin-top: 24px; font-size: clamp(17px, 2vw, 20px); color: var(--muted); max-width: 32em; }
+    .lede strong { color: var(--ink); font-weight: 600; }
+    .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .portrait { position: relative; justify-self: end; width: min(100%, 340px); }
+    .portrait::before {
+      content: ""; position: absolute; inset: 18px -18px -18px 18px;
+      border-radius: var(--radius); background: var(--accent);
+    }
+    .portrait img { position: relative; border-radius: var(--radius); aspect-ratio: 1; object-fit: cover; box-shadow: var(--shadow); }
+
+    /* Highlights */
+    .stats { padding: 16px 0 40px; }
+    .stats ul {
+      list-style: none; margin: 0; padding: 0;
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+    }
+    .stats li { padding: 28px 24px 28px 0; }
+    .stats li + li { padding-left: 24px; border-left: 1px solid var(--line); }
+    .stats b { display: block; font: 700 clamp(28px, 3.4vw, 40px)/1 var(--display); letter-spacing: -.02em; }
+    .stats span { display: block; margin-top: 8px; font-size: 14px; color: var(--muted); line-height: 1.4; }
+
+    /* Sections */
+    section { scroll-margin-top: 72px; }
+    .section { padding: 64px 0; }
+    .section-grid { display: grid; grid-template-columns: 240px 1fr; gap: 48px; }
+    .kicker { font: 600 13px var(--body); letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+    .section h2 { font-size: clamp(28px, 3.4vw, 36px); }
+
+    /* Experience */
+    .jobs { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+    .job {
+      display: grid; grid-template-columns: 1fr auto; gap: 8px 24px;
+      background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 28px 32px; transition: transform .2s, box-shadow .2s;
+    }
+    .job:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+    .job h3 { font-size: 22px; }
+    .job .role { font-weight: 500; margin-top: 4px; }
+    .job .when { font-size: 14px; font-weight: 500; color: var(--muted); white-space: nowrap; text-align: right; }
+    .job .where { display: block; font-weight: 400; }
+    .job p.note { grid-column: 1 / -1; color: var(--muted); margin-top: 6px; }
+    .highlights { grid-column: 1 / -1; list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 8px; }
+    .highlights li { position: relative; padding-left: 22px; font-size: 16px; }
+    .highlights li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 8px; height: 8px; border-radius: 2px; background: var(--accent); }
+    .highlights strong { font-weight: 600; }
+    .job.current { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
+    .badge { display: inline-block; margin-left: 8px; vertical-align: 3px; font: 600 11px var(--body); letter-spacing: .06em; color: var(--accent); background: var(--accent-soft); padding: 3px 8px; border-radius: 999px; }
+
+    /* Simple lists (education, recognition) */
+    .rows { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+    .rows li { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+    .rows b { font: 600 19px/1.3 var(--display); letter-spacing: -.01em; }
+    .rows .sub { display: block; color: var(--muted); font-size: 15px; margin-top: 2px; }
+    .rows .yr { color: var(--muted); font-size: 14px; font-weight: 500; white-space: nowrap; }
+
+    /* Papers */
+    .papers a { display: flex; justify-content: space-between; align-items: center; gap: 24px; width: 100%; text-decoration: none; }
+    .papers li { padding: 0; }
+    .papers a { padding: 20px 0; }
+    .papers i { font-style: normal; font-size: 20px; color: var(--muted); transition: transform .2s, color .2s; }
+    .papers a:hover i { transform: translate(3px, -3px); color: var(--accent); }
+    .more { display: inline-block; margin-top: 20px; font-weight: 600; color: var(--accent); text-decoration: none; }
+    .more:hover { text-decoration: underline; }
+
+    .langs { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start; align-content: flex-start; }
+    .chip { font-size: 15px; font-weight: 500; padding: 8px 16px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); }
+
+    /* Contact */
+    .contact {
+      text-align: center; padding: 80px 32px; border-radius: calc(var(--radius) + 10px);
+      background: var(--ink); color: var(--bg);
+    }
+    .contact h2 { font-size: clamp(36px, 6vw, 60px); }
+    .contact p { margin: 16px auto 0; max-width: 30em; opacity: .72; font-size: 18px; }
+    .contact .cta { justify-content: center; margin-top: 32px; }
+    .contact .btn:not(.btn-primary) { background: transparent; border-color: color-mix(in srgb, var(--bg) 25%, transparent); color: var(--bg); }
+
+    footer { padding: 40px 0 48px; color: var(--muted); font-size: 14px; }
+    footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    footer nav { display: flex; gap: 20px; flex-wrap: wrap; }
+    footer a { text-decoration: none; }
+    footer a:hover { color: var(--ink); }
+
+    /* Reveal on scroll (only when JS is running) */
+    .js .reveal { opacity: 0; transform: translateY(16px); transition: opacity .7s ease, transform .7s ease; }
+    .js .reveal.in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .reveal { opacity: 1; transform: none; transition: none; }
+      .job, .btn { transition: none; }
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero .wrap { grid-template-columns: 1fr; gap: 40px; }
+      .portrait { justify-self: start; width: min(64%, 260px); order: -1; }
+      .stats ul { grid-template-columns: repeat(2, 1fr); }
+      .stats li:nth-child(3) { padding-left: 0; border-left: 0; }
+      .stats li:nth-child(n+3) { border-top: 1px solid var(--line); }
+      .section-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .wrap { width: calc(100% - 32px); }
+      .nav ul li:not(:last-child) { display: none; }
+      .hero { padding: 40px 0; }
+      .section { padding: 44px 0; }
+      .stats { padding-bottom: 24px; }
+      .stats li, .stats li + li { padding: 20px 12px 20px 0; }
+      .stats li:nth-child(even) { padding-left: 16px; }
+      .job { grid-template-columns: 1fr; padding: 22px; }
+      .job .when { text-align: left; order: -1; }
+      .rows li { flex-direction: column; gap: 4px; }
+      .contact { padding: 56px 20px; }
     }
   </style>
 </head>
 <body>
-  <h1>Hi, I'm Kuat Telegenov.</h1>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="wrap">
+      <a class="logo" href="#top">Kuat Telegenov<span>.</span></a>
+      <ul>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a class="btn btn-primary" href="#contact">Say hi</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Robotics Engineer at Amazon · Boston</p>
+          <h1>I turn robotics into <em>real-world results.</em></h1>
+          <p class="lede">13 years across research labs, universities and industry. Today I help <strong>Amazon</strong> bring robotics online across its fulfillment network.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="mailto:ktelegenov@gmail.com">Get in touch</a>
+            <a class="btn" href="https://www.linkedin.com/in/ktelegenov" target="_blank" rel="noopener">LinkedIn ↗</a>
+          </div>
+        </div>
+        <div class="portrait">
+          <img src="/assets/img/kuat.jpg" width="800" height="800" alt="Portrait of Kuat Telegenov" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Highlights">
+      <div class="wrap">
+        <ul class="reveal">
+          <li><b>13+</b><span>years in robotics</span></li>
+          <li><b>3</b><span>countries, 3 continents</span></li>
+          <li><b>11</b><span>published papers</span></li>
+          <li><b>4</b><span>languages spoken</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="wrap section-grid">
+        <div class="reveal">
+          <p class="kicker">Experience</p>
+          <h2>Where I've worked</h2>
+        </div>
+        <ol class="jobs">
+          <li class="job current reveal">
+            <div>
+              <h3>Amazon <span class="badge">NOW</span></h3>
+              <p class="role">Systems Development Engineer II</p>
+            </div>
+            <p class="when">2025 – Present<span class="where">Boston, MA</span></p>
+            <p class="note">I build the automation that takes Amazon's robotic workcells from installation to production, faster and with fewer errors, across its fulfillment centers.</p>
+            <ul class="highlights">
+              <li>Promoted to SysDE II in under 18 months</li>
+              <li>Automated how new robotic workcells are set up, calibrated and validated</li>
+              <li>Built the shared tools and release pipelines commissioning teams rely on</li>
+              <li>Champion for security and operational excellence across the stack</li>
+            </ul>
+          </li>
+          <li class="job reveal">
+            <div>
+              <h3>KAUST</h3>
+              <p class="role">Research Engineer &amp; Lab Manager</p>
+            </div>
+            <p class="when">2018 – 2025<span class="where">Saudi Arabia</span></p>
+            <p class="note">Seven years building and leading robotics at one of the world's top research universities, from an empty room to a lab serving research groups across campus.</p>
+            <ul class="highlights">
+              <li>Built a world-class robotics lab from concept to opening, then ran it</li>
+              <li>Led KAUST's team to the <strong>Best Aerial Performance Award</strong> at the European Robotics League</li>
+              <li>Led an underwater robot project for coral reef monitoring in the Red Sea</li>
+              <li>Finalist in the Taqadam startup accelerator with a drone-delivery venture</li>
+              <li>Enabled students and postdocs across multiple research groups</li>
+            </ul>
+          </li>
+          <li class="job reveal">
+            <div>
+              <h3>Nazarbayev University</h3>
+              <p class="role">Instructor &amp; Research Assistant</p>
+            </div>
+            <p class="when">2012 – 2018<span class="where">Astana, Kazakhstan</span></p>
+            <p class="note">Taught mechanical design and mentored student capstone projects.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="wrap section-grid">
+        <div class="reveal">
+          <p class="kicker">Education</p>
+          <h2>Engineering meets business</h2>
+        </div>
+        <ul class="rows reveal">
+          <li><div><b>MBA</b><span class="sub">University of Illinois Urbana-Champaign</span></div><span class="yr">2026</span></li>
+          <li><div><b>MSc, Engineering Mechanics</b><span class="sub">L.N. Gumilyov Eurasian National University</span></div><span class="yr">2014</span></li>
+          <li><div><b>BEng, Mechanical Engineering (Aeronautics)</b><span class="sub">Universiti Teknologi Malaysia</span></div><span class="yr">2012</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="wrap section-grid">
+        <div class="reveal">
+          <p class="kicker">Research</p>
+          <h2>Selected papers</h2>
+        </div>
+        <div class="reveal">
+          <ul class="rows papers">
+            <li>
+              <a href="https://ieeexplore.ieee.org/document/7109102" target="_blank" rel="noopener">
+                <div><b>Low-Cost Open-Source 3D-Printed Robotic Gripper</b><span class="sub">IEEE Access · 2015</span></div><i aria-hidden="true">↗</i>
+              </a>
+            </li>
+            <li>
+              <a href="https://ieeexplore.ieee.org/document/9184014" target="_blank" rel="noopener">
+                <div><b>Optical Communications Through the Water–Air Interface</b><span class="sub">IEEE Access · 2020</span></div><i aria-hidden="true">↗</i>
+              </a>
+            </li>
+            <li>
+              <a href="https://ieeexplore.ieee.org/document/9857563" target="_blank" rel="noopener">
+                <div><b>HD Video Transmission System for Drones</b><span class="sub">IEEE Open Journal of Antennas and Propagation · 2022</span></div><i aria-hidden="true">↗</i>
+              </a>
+            </li>
+          </ul>
+          <a class="more" href="https://scholar.google.com/citations?user=fRByoW0AAAAJ" target="_blank" rel="noopener">All papers on Google Scholar →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="languages">
+      <div class="wrap section-grid">
+        <div class="reveal">
+          <p class="kicker">Languages</p>
+          <h2>I speak</h2>
+        </div>
+        <div class="langs reveal">
+          <span class="chip">English</span><span class="chip">Russian</span><span class="chip">Kazakh</span><span class="chip">Turkish</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="contact reveal">
+          <h2>Let's connect.</h2>
+          <p>Open to conversations about robotics, automation and new opportunities.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="mailto:ktelegenov@gmail.com">ktelegenov@gmail.com</a>
+            <a class="btn" href="https://www.linkedin.com/in/ktelegenov" target="_blank" rel="noopener">LinkedIn ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Kuat Telegenov</span>
+      <nav aria-label="Elsewhere">
+        <a href="https://www.linkedin.com/in/ktelegenov" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/ktelegenov" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=fRByoW0AAAAJ" target="_blank" rel="noopener">Scholar</a>
+        <a href="https://x.com/ktelegenov" target="_blank" rel="noopener">X</a>
+        <a href="https://www.instagram.com/kuat.telegenov" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.documentElement.classList.add('js');
+    const nav = document.querySelector('.nav');
+    const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 8);
+    onScroll();
+    addEventListener('scroll', onScroll, { passive: true });
+
+    const items = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { rootMargin: '0px 0px -8% 0px' });
+      items.forEach((el) => io.observe(el));
+    } else {
+      items.forEach((el) => el.classList.add('in'));
+    }
+  </script>
 </body>
 </html>

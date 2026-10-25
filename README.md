@@ -1,13 +1,19 @@
-# Minimal Mistakes Jelkyl Theme
+# kuatt.com
 
-[Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+Personal site of Kuat Telegenov, served by GitHub Pages.
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+A single static page: no build step and no Jekyll (`.nojekyll` turns it off).
 
----
+- `index.html`: the whole site (markup, styles and a small script)
+- `assets/img/`: portrait (`kuat.jpg`) and social preview image (`og.jpg`)
+- `favicon.svg`, `apple-touch-icon.png`: browser icons
+- `sitemap.xml`, `robots.txt`: for search engines
+- `CNAME`: custom domain
 
-# Resources
+To preview locally:
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+```bash
+python3 -m http.server 8000
+```
+
+Then open http://localhost:8000.
